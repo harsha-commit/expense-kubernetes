@@ -1,4 +1,6 @@
-# Install eksctl
+### RUN `aws configure` BEFORE RUNNING THIS SCRIPT ###
+
+# Install eksctl and Create a Cluster
 curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
 sudo mv /tmp/eksctl /usr/local/bin
 eksctl create cluster --config-file=eks.yaml
